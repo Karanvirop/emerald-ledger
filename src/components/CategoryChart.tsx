@@ -45,7 +45,7 @@ export function CategoryChart({ expenses }: { expenses: Expense[] }) {
               </Pie>
               <Tooltip
                 contentStyle={{ background: '#1a1d2e', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, color: '#fff', fontSize: 13 }}
-                formatter={(value: number) => [`$${value.toFixed(2)}`, '']}
+                formatter={(value) => [`$${Number(value).toFixed(2)}`, '']}
               />
             </PieChart>
           </ResponsiveContainer>
